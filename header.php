@@ -44,7 +44,7 @@
       </form>
 
       <div class="icon-row">
-        <a href="#" class="icon-btn" aria-label="Account">
+        <a href="registration.php" class="icon-btn" aria-label="Account">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
         </a>
         <a href="#" class="icon-btn" aria-label="Wishlist">

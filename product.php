@@ -1,43 +1,36 @@
-<?php
-@include("header.php")?>
-<div class="container-fluid vh-100 d-flex flex-column p-4 bg-light">
-  <h2 class="mb-4 text-center fw-bold">Product Information</h2>
-  
-  <form class="d-flex flex-column flex-grow-1 justify-content-between">
-    <!-- Product Input -->
-    <div class="flex-grow-3 d-flex flex-column mb-3">
-      <label for="productInput" class="form-label fs-4">Product</label>
-      <input type="text" class="form-control form-control-lg flex-grow-1 fs-3" id="productInput" placeholder="Enter product name" required>
+  <?php
+  @include("header.php")
+  ?>
+  <form style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 2rem; gap: 1.5rem; width: 100%; height: 100%; box-sizing: border-box;" onsubmit="event.preventDefault();">
+
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <label for="email" style="font-size: 1.25rem; font-weight: 600;">product</label>
+      <input type="text"  placeholder="name" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <label for="email" style="font-size: 1.25rem; font-weight: 600;">Quantity</label>
+      <input type="email" id="email" placeholder="quantity" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
 
-    <!-- Quantity Input -->
-    <div class="flex-grow-3 d-flex flex-column mb-3">
-      <label for="qtyInput" class="form-label fs-4">Qty</label>
-      <input type="number" class="form-control form-control-lg flex-grow-1 fs-3" id="qtyInput" placeholder="Quantity" min="1" required>
+    <!-- Password Field -->
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <label for="password" style="font-size: 1.25rem; font-weight: 600;">Price</label>
+      <input type="password" id="password" placeholder="Price" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+    </div>
+  <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <label for="password" style="font-size: 1.25rem; font-weight: 600;">description</label>
+      <input type="password" id="password" placeholder="description" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
 
-    <!-- Price Input -->
-    <div class="flex-grow-1 d-flex flex-column mb-3">
-      <label for="priceInput" class="form-label fs-4">Price</label>
-      <div class="input-group flex-grow-1">
-        <span class="input-group-text fs-3 px-4">$</span>
-        <input type="text" class="form-control form-control-lg fs-3" id="priceInput" placeholder="0.00" required>
-      </div>
-    </div>
 
-    <!-- Description Input -->
-    <div class="flex-grow-1 d-flex flex-column mb-4">
-      <label for="descInput" class="form-label fs-4">Desc</label>
-      <textarea class="form-control form-control-lg flex-grow-1 fs-3" id="descInput" placeholder="Enter product description"></textarea>
-    </div>
 
-    <!-- Submit Button -->
-    <div class="w-100">
-      <button type="submit" class="btn btn-primary btn-lg w-100 py-3 fs-3 fw-bold">Submit</button>
-    </div>
+    <button type="submit" style="width: 100%; padding: 1.1rem; font-size: 1.25rem; font-weight: 700; color: #ffffff; background: #2563eb; border: none; border-radius: 8px; cursor: pointer; margin-top: 1rem;">
+      Submit
+    </button>
   </form>
-</div>
 
-///....hfgjjihylgfijjmklfh  
-<?php
-@include("footer.php")?>
+</body>
+</html>
+  <?php
+  @include("footer.php")
+  ?>
