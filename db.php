@@ -10,7 +10,14 @@ $Price = $_POST['Price'];
 $Description = $_POST['Description'];
 
 
-$query= "INSERT INTO `products`( ProductName, `ProductQuentity`, `ProductPrice`, `Productdescription`) VALUES 
+if($product == "" || $Quentity == "" || $Price == "" || $Description == ""){
+    echo "<script> alert('fill the details completely')
+    window.location.href = './dahbord/addproducts.php'
+    </script>";
+   
+}
+else {
+    $query= "INSERT INTO `products`( ProductName, `ProductQuentity`, `ProductPrice`, `Productdescription`) VALUES 
 ( '$product' , '$Quentity' , '$Price' , '$Description' )";
 
 $reslut = mysqli_query($con , $query);
@@ -21,9 +28,7 @@ header("location:./dahbord/showproducts.php");
 else{
 echo "maro";
 }
+}    
 }
-
-
-
 // echo $product . $Quentity . $Price . $Description;
 ?>

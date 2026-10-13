@@ -11,12 +11,12 @@
     
     <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="Quentity" style="font-size: 1.25rem; font-weight: 600;">Quentity</label>
-      <input type="text" name="Quentity" placeholder="Quentity" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+      <input type="number" name="Quentity" placeholder="Quentity" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
 
     <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="Price" style="font-size: 1.25rem; font-weight: 600;">Price</label>
-      <input type="text" name="Price" placeholder="Price" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+      <input type="number" name="Price" placeholder="Price" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
   <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="Description" style="font-size: 1.25rem; font-weight: 600;">Description</label>

@@ -2,7 +2,7 @@
 @include("header.php")
 
 ?>
-<h1 style="display: flex; justify-content: center; align-items: center; font-family: 'Inter', system-ui, sans-serif; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; color: #880000; text-shadow: 0 4px 20px rgba(37, 99, 235, 0.5), 0 2px 4px rgba(0, 0, 0, 0.4); margin: 2.5rem 0 1.5rem 0;">Add Product</h1>
+<h1 style="display: flex; justify-content: center; align-items: center; font-family: 'Inter', system-ui, sans-serif; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.025em; color: #880000; text-shadow: 0 4px 20px rgba(37, 99, 235, 0.5), 0 2px 4px rgba(0, 0, 0, 0.4); margin: 2.5rem 0 1.5rem 0;">Products</h1>
 <table class="table">
   <thead>
     <tr>
@@ -11,6 +11,7 @@
       <th scope="col">Quentity</th>
       <th scope="col">Price</th>
       <th scope="col">Description</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
@@ -31,7 +32,7 @@ $query = "select * from products";
       <td>$row[ProductPrice]</td>
       <td>$row[Productdescription]</td>
       <td>
-    <button class='btn btn-success'>Edit</button>
+    <button class='btn btn-info'><a href='./update_products.php?id=$row[id]'>Edit</a></button>
     <button class='btn btn-danger'><a href='./deleteproducts_db.php?id=$row[id]'>Delete</a></button>
    </td>
     </tr>";

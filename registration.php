@@ -1,27 +1,32 @@
   <?php
   @include("header.php")
   ?>
-  <form>
+  <form action ="registration_db.php" method ="post">
   <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 2rem; gap: 1.5rem; width: 100%; height: 100%; box-sizing: border-box;">
-    <h1 style="display:flex; justify-content:center; align-items:center; height:9vh; margin:;">signin</h1>
+    <h1 style="display:flex; justify-content:center; align-items:center; height:9vh; margin:;">Registration</h1>
   <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="Name" style="font-size: 1.25rem; font-weight: 600;">Name</label>
-      <input type="text"  placeholder="name" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+      <input type="text" name ="name" placeholder="name" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
     <!-- Email Field -->
     <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="email" style="font-size: 1.25rem; font-weight: 600;">Email address</label>
-      <input type="email" id="email" placeholder="name@example.com" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+      <input type="email" name ="email" placeholder="name@example.com" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
 
     <!-- Password Field -->
     <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
       <label for="password" style="font-size: 1.25rem; font-weight: 600;">Password</label>
-      <input type="password" id="password" placeholder="••••••••" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+      <input type="password" name ="password" placeholder="••••••••" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
     </div>
 
-    <button type="submit" style="width: 100%; padding: 1.1rem; font-size: 1.25rem; font-weight: 700; color: #ffffff; background: #2563eb; border: none; border-radius: 8px; cursor: pointer; margin-top: 1rem;">
-      Submit
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; width: 100%;">
+      <label for="address" style="font-size: 1.25rem; font-weight: 600;">address</label>
+      <input type="text" name ="address" placeholder="sindh" style="width: 100%; padding: 1rem 1.25rem; font-size: 1.1rem; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #ffffff; box-sizing: border-box; outline: none;">
+    </div>
+
+    <button type="submit" name ="registerbtn" style="width: 100%; padding: 1.1rem; font-size: 1.25rem; font-weight: 700; color: #ffffff; background: #2563eb; border: none; border-radius: 8px; cursor: pointer; margin-top: 1rem;">
+      registration
     </button>
     </div>
     
