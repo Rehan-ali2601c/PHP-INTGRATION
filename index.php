@@ -1,6 +1,7 @@
 
   <?php
-  @include("header.php")?>
+  @include("header.php");
+  ?>
   <a class="skip-link" href="#main">Skip to content</a>
 
  
